@@ -27,6 +27,10 @@ $(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/nitrogen/products/common.mk)
 
+# TWRP
+PRODUCT_COPY_FILES += \
+    device/lge/bullhead/twrp.fstab:recovery/root/etc/twrp.fstab
+
 PRODUCT_NAME := nitrogen_bullhead
 PRODUCT_DEVICE := bullhead
 PRODUCT_BRAND := google
