@@ -21,10 +21,9 @@
 $(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
-$(call inherit-product, vendor/du/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/nitrogen/products/common.mk)
 
-PRODUCT_NAME := du_bullhead
+PRODUCT_NAME := nitrogen_bullhead
 PRODUCT_DEVICE := bullhead
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 5X
