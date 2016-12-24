@@ -500,6 +500,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1﻿
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.media.enc.jpeg.quality=100 \
+    ro.media.dec.jpeg.memcap=8000000 \
+    ro.media.enc.hprof.vid.bps=8000000 \
+    ro.config.media_vol_steps=20
+
+# Telephony
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.vc_call_vol_steps=20 \
+    ro.telephony.call_ring.delay=0 \
+    ring.delay=0
+
 $(call inherit-product-if-exists, hardware/qcom/msm8994/msm8992.mk)
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8994/msm8994-gpu-vendor.mk)
 
