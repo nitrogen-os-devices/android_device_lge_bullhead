@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
